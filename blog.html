@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TailwindCLI</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-50">
+  <header class="">
+    <div class="space-y-5 p-4 md:flex md:items-center md:justify-between lg:max-w-7xl mx-auto">
+      <picture class="flex-shrink">
+        <img class="mx-auto h-9"
+          src="https://1.bp.blogspot.com/-Y5Igfidxox0/WjQrtlUYzFI/AAAAAAAAKIQ/T6xgkLlArloboNyKOE-lGuIJj5M5O0MsQCK4BGAYYCw/s1600/theblogger-logo.png"
+          alt="logo">
+      </picture>
+      <div class="">
+        <img class="md:h-20"
+          src="https://1.bp.blogspot.com/-9JXEVlBLxa8/Wc6Ac6Abw3I/AAAAAAAAKDc/Xj6VZGZ-o9o-1M87IdsV_5-CYq62Duh-gCLcBGAs/s1600/unnamed.jpg">
+      </div>
+    </div>
+    <div class="relative">
+      <div class="px-4 py-2 flex items-center justify-between border-b border-t lg:hidden">
+        <p>Menu</p>
+        <button class="border rounded p-1">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+      <div
+        class="absolute lg:relative bg-gray-50 -bottom-58 w-full p-3 lg:border-b lg:border-t lg:py-2 lg:bg-white lg:shadow-lg">
+        <nav class="max-w-7xl mx-auto lg:flex lg:items-center lg:justify-between">
+          <ul class="lg:flex lg:space-x-5">
+            <li class="p-1 bg-gray-900 rounded hidden lg:block text-white">
+              <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25" />
+                </svg>
+              </a>
+            </li>
+            <li class="p-1">
+              <a href="">HOME</a>
+            </li>
+            <li class="p-1">
+              <a href="">TRAVEL</a>
+            </li>
+            <li class="p-1">
+              <a href="">SUMMER</a>
+            </li>
+            <li class="p-1">
+              <a href="">LIFESTYLE</a>
+            </li>
+            <li class="p-1">
+              <a href="">SHOP</a>
+            </li>
+            <li class="p-1">
+              <a href="">DOWNLOAD</a>
+            </li>
+          </ul>
+          <ul>
+            <li class="p-1 bg-gray-900 rounded hidden lg:block text-white">
+              <a href="">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                  stroke="currentColor" class="w-6 h-6">
+                  <path stroke-linecap="round" stroke-linejoin="round"
+                    d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75" />
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="mt-5">
+    <div class="lg:max-w-7xl mx-auto">
+      <div class="lg:flex lg:space-x-12">
+        <!--left-->
+        <div class="lg:w-3/4">
+          <div class="grid md:grid-cols-3 gap-4">
+            <div class="bg-white md:col-span-2 shadow-lg">
+              <div class="">
+                <div>
+                  <img
+                    src="https://2.bp.blogspot.com/-s427fa--rrg/WjQDkjRJ6tI/AAAAAAAAKGs/_LYacqhg7Z0-BtW4x5UrwV0TEDwjToHVgCLcBGAs/s1600/05.jpg"
+                    alt="">
+                </div>
+                <div class="p-5">
+                  <h1 class="text-lg lg:text-3xl font-bold">Beautiful women relaxing at the luxury poolside</h1>
+                  <div class="mt-2">
+                    <p class="text-xs text-gray-600">RINA CHAUDHARY <span class="text-gray-400">-JUL 01, 2016</span></p>
+                  </div>
+                  <hr class="w-20 my-2">
+                  <p class="text-md text-gray-900">
+                    Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                    aliquip ex ea commodo consequat...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="space-y-5">
+              <div class="bg-white md:col-span-2">
+                <div class="shadow-lg">
+                  <div>
+                    <img
+                      src="https://4.bp.blogspot.com/-2_mRGCYI4uc/WjQDkkE5uhI/AAAAAAAAKGo/tcyRYsv4hFEQckAuaWuONnj7nyEnQIJ6gCEwYBhgL/s1600/18.jpg"
+                      alt="">
+                  </div>
+                  <div class="p-5">
+                    <h1 class="text-lg font-bold leading-6">Active summer vacations with paddle board</h1>
+                    <div class="mt-2">
+                      <p class="text-xs text-gray-600">RINA CHAUDHARY <span class="text-gray-400">-JUL 01, 2016</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="bg-white md:col-span-2">
+                <div class="shadow-lg">
+                  <div>
+                    <img
+                      src="https://1.bp.blogspot.com/-V4sGdAGS0HQ/WjQFh9PfEOI/AAAAAAAAKHI/YIYvwsU1q9QtmjxN5P4kpPgpNJ_ksigjwCLcBGAs/s1600/08.jpeg"
+                      alt="">
+                  </div>
+                  <div class="p-5">
+                    <h1 class="text-lg font-bold leading-6">Too much work done on the face, why naturally beautiful</h1>
+                    <div class="mt-2">
+                      <p class="text-xs text-gray-600">RINA CHAUDHARY <span class="text-gray-400">-JUL 01, 2016</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--recent posts-->
+          <div class="">
+            <div class="mt-10 flex items-center">
+              <div class="w-40">
+                <h2>RECENT POSTS</h2>
+              </div>
+              <div class="w-full h-0.5 rounded-full bg-gray-300"></div>
+            </div>
+            <!--post-->
+            <div class="grid lg:grid-cols-2 mt-5 lg:mt-10 lg:items-center bg-white shadow-lg">
+              <div class="relative">
+                <h2 class="absolute top-5 left-5 rounded text-white bg-pink-500 p-1 text-xs font-semibold">BREAK</h2>
+                <img
+                  src="https://1.bp.blogspot.com/-KgBCnYca9fk/WjQEcie6mZI/AAAAAAAAKG0/a5IDp92Vk0EFQRWvBVv4m1SVkdFVrLm1gCLcBGAs/s1600/29.jpeg"
+                  alt="">
+              </div>
+              <div class="p-5 lg:p-10">
+                <h1 class="text-lg lg:text-3xl font-bold">Beautiful women relaxing at the luxury poolside</h1>
+                <div class="mt-2">
+                  <p class="text-xs text-gray-600">RINA CHAUDHARY <span class="text-gray-400">-JUL 01, 2016</span></p>
+                </div>
+                <hr class="w-20 my-2">
+                <p class="text-md text-gray-900">
+                  Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                  aliquip ex ea commodo consequat...
+                </p>
+                <hr class="my-2">
+
+                <div class="flex items-center space-x-5">
+                  <div class="flex items-center space-x-1 text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="w-4 h-4">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z" />
+                    </svg>
+                    <p class="text-xs">40 Comments</p>
+                  </div>
+                  <div class="flex items-center space-x-1 text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="w-4 h-4">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p class="text-xs">3 Minute Read</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!--post-->
+            <div class="grid lg:grid-cols-2 mt-5 lg:mt-10 lg:items-center bg-white shadow-lg">
+              <div class="relative">
+                <h2 class="absolute top-5 left-5 rounded text-white bg-pink-500 p-1 text-xs font-semibold">BREAK</h2>
+                <img
+                  src="https://2.bp.blogspot.com/-s427fa--rrg/WjQDkjRJ6tI/AAAAAAAAKGs/_LYacqhg7Z0-BtW4x5UrwV0TEDwjToHVgCLcBGAs/s1600/05.jpg"
+                  alt="">
+              </div>
+              <div class="p-5 lg:p-10">
+                <h1 class="text-lg lg:text-3xl font-bold">Beautiful women relaxing at the luxury poolside</h1>
+                <div class="mt-2">
+                  <p class="text-xs text-gray-600">RINA CHAUDHARY <span class="text-gray-400">-JUL 01, 2016</span></p>
+                </div>
+                <hr class="w-20 my-2">
+                <p class="text-md text-gray-900">
+                  Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                  aliquip ex ea commodo consequat...
+                </p>
+                <hr class="my-2">
+
+                <div class="flex items-center space-x-5">
+                  <div class="flex items-center space-x-1 text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="w-4 h-4">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z" />
+                    </svg>
+                    <p class="text-xs">40 Comments</p>
+                  </div>
+                  <div class="flex items-center space-x-1 text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="w-4 h-4">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p class="text-xs">3 Minute Read</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!--post-->
+            <div class="grid lg:grid-cols-2 mt-5 lg:mt-10 lg:items-center bg-white shadow-lg">
+              <div class="relative">
+                <h2 class="absolute top-5 left-5 rounded text-white bg-pink-500 p-1 text-xs font-semibold">BREAK</h2>
+                <img
+                  src="https://4.bp.blogspot.com/-9qcDqK1Y9C0/WjQEt1JLQDI/AAAAAAAAKG4/gVDqHBjHbRYalLfHawAqHez5IzS8EYhxgCLcBGAs/s1600/07.jpeg"
+                  alt="">
+              </div>
+              <div class="p-5 lg:p-10">
+                <h1 class="text-lg lg:text-3xl font-bold">Beautiful women relaxing at the luxury poolside</h1>
+                <div class="mt-2">
+                  <p class="text-xs text-gray-600">RINA CHAUDHARY <span class="text-gray-400">-JUL 01, 2016</span></p>
+                </div>
+                <hr class="w-20 my-2">
+                <p class="text-md text-gray-900">
+                  Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                  aliquip ex ea commodo consequat...
+                </p>
+                <hr class="my-2">
+
+                <div class="flex items-center space-x-5">
+                  <div class="flex items-center space-x-1 text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="w-4 h-4">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z" />
+                    </svg>
+                    <p class="text-xs">40 Comments</p>
+                  </div>
+                  <div class="flex items-center space-x-1 text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="w-4 h-4">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p class="text-xs">3 Minute Read</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!--post-->
+            <div class="grid lg:grid-cols-2 mt-5 lg:mt-10 lg:items-center bg-white shadow-lg">
+              <div class="relative">
+                <h2 class="absolute top-5 left-5 rounded text-white bg-pink-500 p-1 text-xs font-semibold">BREAK</h2>
+                <img
+                  src="https://4.bp.blogspot.com/-Arx0z1_XDhA/WjQE-k9-blI/AAAAAAAAKG8/uAWNU0Tg59MmzzS9WLsluW9C1P_E0qVOACLcBGAs/s1600/01.jpg"
+                  alt="">
+              </div>
+              <div class="p-5 lg:p-10">
+                <h1 class="text-lg lg:text-3xl font-bold">Beautiful women relaxing at the luxury poolside</h1>
+                <div class="mt-2">
+                  <p class="text-xs text-gray-600">RINA CHAUDHARY <span class="text-gray-400">-JUL 01, 2016</span></p>
+                </div>
+                <hr class="w-20 my-2">
+                <p class="text-md text-gray-900">
+                  Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                  aliquip ex ea commodo consequat...
+                </p>
+                <hr class="my-2">
+
+                <div class="flex items-center space-x-5">
+                  <div class="flex items-center space-x-1 text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="w-4 h-4">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z" />
+                    </svg>
+                    <p class="text-xs">40 Comments</p>
+                  </div>
+                  <div class="flex items-center space-x-1 text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="w-4 h-4">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p class="text-xs">3 Minute Read</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!--post-->
+            <div class="grid lg:grid-cols-2 mt-5 lg:mt-10 lg:items-center bg-white shadow-lg">
+              <div class="relative">
+                <h2 class="absolute top-5 left-5 rounded text-white bg-pink-500 p-1 text-xs font-semibold">BREAK</h2>
+                <img
+                  src="https://1.bp.blogspot.com/-qcd-mhoNlUI/WjQDknK9QOI/AAAAAAAAKGw/EwRnHIEjfJsF-UBkrwUIImH1rZ9fPgW7ACEwYBhgL/s1600/17.jpg"
+                  alt="">
+              </div>
+              <div class="p-5 lg:p-10">
+                <h1 class="text-lg lg:text-3xl font-bold">Beautiful women relaxing at the luxury poolside</h1>
+                <div class="mt-2">
+                  <p class="text-xs text-gray-600">RINA CHAUDHARY <span class="text-gray-400">-JUL 01, 2016</span></p>
+                </div>
+                <hr class="w-20 my-2">
+                <p class="text-md text-gray-900">
+                  Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                  aliquip ex ea commodo consequat...
+                </p>
+                <hr class="my-2">
+
+                <div class="flex items-center space-x-5">
+                  <div class="flex items-center space-x-1 text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="w-4 h-4">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z" />
+                    </svg>
+                    <p class="text-xs">40 Comments</p>
+                  </div>
+                  <div class="flex items-center space-x-1 text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="w-4 h-4">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p class="text-xs">3 Minute Read</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+            <!--post-->
+            <div class="grid lg:grid-cols-2 mt-5 lg:mt-10 lg:items-center bg-white shadow-lg">
+              <div class="relative">
+                <h2 class="absolute top-5 left-5 rounded text-white bg-pink-500 p-1 text-xs font-semibold">BREAK</h2>
+                <img
+                  src="https://4.bp.blogspot.com/-2_mRGCYI4uc/WjQDkkE5uhI/AAAAAAAAKGo/tcyRYsv4hFEQckAuaWuONnj7nyEnQIJ6gCEwYBhgL/s1600/18.jpg"
+                  alt="">
+              </div>
+              <div class="p-5 lg:p-10">
+                <h1 class="text-lg lg:text-3xl font-bold">Beautiful women relaxing at the luxury poolside</h1>
+                <div class="mt-2">
+                  <p class="text-xs text-gray-600">RINA CHAUDHARY <span class="text-gray-400">-JUL 01, 2016</span></p>
+                </div>
+                <hr class="w-20 my-2">
+                <p class="text-md text-gray-900">
+                  Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut
+                  aliquip ex ea commodo consequat...
+                </p>
+                <hr class="my-2">
+
+                <div class="flex items-center space-x-5">
+                  <div class="flex items-center space-x-1 text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="w-4 h-4">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 20.25c4.97 0 9-3.694 9-8.25s-4.03-8.25-9-8.25S3 7.444 3 12c0 2.104.859 4.023 2.273 5.48.432.447.74 1.04.586 1.641a4.483 4.483 0 01-.923 1.785A5.969 5.969 0 006 21c1.282 0 2.47-.402 3.445-1.087.81.22 1.668.337 2.555.337z" />
+                    </svg>
+                    <p class="text-xs">40 Comments</p>
+                  </div>
+                  <div class="flex items-center space-x-1 text-gray-400">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                      stroke="currentColor" class="w-4 h-4">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <p class="text-xs">3 Minute Read</p>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!--prev next-->
+          <div class="mt-10">
+            <ul class="flex items-center space-x-3">
+              <li class="text-lg font-bold text-gray-500">1</li>
+              <li class="text-lg font-bold text-gray-900">2</li>
+              <li class="text-lg font-bold text-gray-900">3</li>
+              <li class="text-lg font-bold text-gray-900">...</li>
+              <li class="text-lg font-bold text-gray-900">
+                <button class="flex items-center space-x-1">
+                  <span>Next</span>
+                  <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                      stroke="currentColor" class="w-5 h-5">
+                      <path stroke-linecap="round" stroke-linejoin="round"
+                        d="M4.5 12h15m0 0l-6.75-6.75M19.5 12l-6.75 6.75" />
+                    </svg>
+                  </span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!--right-->
+        <div class="mt-5 lg:mt-0 lg:w-1/4">
+          <!--recent-->
+          <div class="p-5 bg-white shadow-lg">
+            <div class="flex items-center">
+              <div class="w-60">
+                <h2 class="text-sm">RECENT POSTS</h2>
+              </div>
+
+              <div class="w-full h-0.5 rounded-full bg-gray-300"></div>
+            </div>
+            <div class="bg-white md:col-span-2 mt-5">
+              <div class="">
+                <div>
+                  <img
+                    src="https://1.bp.blogspot.com/-KgBCnYca9fk/WjQEcie6mZI/AAAAAAAAKG0/a5IDp92Vk0EFQRWvBVv4m1SVkdFVrLm1gCLcBGAs/s1600/29.jpeg"
+                    alt="">
+                </div>
+                <div class="p-5">
+                  <h1 class="text-lg font-bold leading-6">Active summer vacations with paddle board</h1>
+                  <div class="mt-2">
+                    <p class="text-xs text-gray-600">RINA CHAUDHARY <span class="text-gray-400">-JUL 01, 2016</span>
+                    </p>
+                  </div>
+                </div>
+                <hr class="my-2">
+                <div class="p-5">
+                  <h1 class="text-lg font-bold leading-6">Active summer vacations with paddle board</h1>
+                  <div class="mt-2">
+                    <p class="text-xs text-gray-600">RINA CHAUDHARY <span class="text-gray-400">-JUL 01, 2016</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--follow us-->
+          <div class="p-5 bg-white shadow-lg mt-10">
+            <div class="flex items-center">
+              <div class="w-60">
+                <h2 class="text-sm">FOLLOW US</h2>
+              </div>
+              <div class="w-full h-0.5 rounded-full bg-gray-300"></div>
+            </div>
+            <div class="bg-white md:col-span-2 mt-5">
+              <ul>
+                <li
+                  class="text-xs  flex items-center cursor-pointer border-t border-l border-r text-gray-900 hover:bg-[#3b5998] hover:text-white">
+                  <div class="p-2 border-r">
+                    <img class="h-4" src="madhuassets/facebook.svg" alt="facebook">
+                  </div>
+                  <div class="flex items-center justify-between w-full p-2">
+                    <p>FACEBOOK</p>
+                    <P>LIKE</P>
+                  </div>
+                </li>
+                <li
+                  class="text-xs  flex items-center cursor-pointer border-t border-l border-r text-gray-900 hover:bg-[#00acee] hover:text-white">
+                  <div class="p-2 border-r">
+                    <img class="h-4" src="madhuassets/twitter.svg" alt="twitter">
+                  </div>
+                  <div class="flex items-center justify-between w-full p-2">
+                    <p>FACEBOOK</p>
+                    <P>FOLLOW</P>
+                  </div>
+                </li>
+                <li
+                  class="text-xs  flex items-center cursor-pointer border-t border-l border-r text-gray-900 hover:bg-gray-400 hover:text-white">
+                  <div class="p-2 border-r">
+                    <img class="h-4" src="madhuassets/pinterest.svg" alt="pinterest">
+                  </div>
+                  <div class="flex items-center justify-between w-full p-2">
+                    <p>PINTEREST</p>
+                    <P>FOLLOW</P>
+                  </div>
+                </li>
+                <li
+                  class="text-xs  flex items-center cursor-pointer border-t border-l border-r border-b text-gray-900 hover:bg-[#fa7e1e] hover:text-white">
+                  <div class="p-2 border-r">
+                    <img class="h-4" src="madhuassets/instagram.svg" alt="instagram">
+                  </div>
+                  <div class="flex items-center justify-between w-full p-2">
+                    <p>INSTAGRAM</p>
+                    <P>FOLLOW</P>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--FACEBOOK-->
+          <div class="p-5 bg-white shadow-lg mt-10">
+            <div class="flex items-center">
+              <div class="w-60">
+                <h2 class="text-sm">FACEBOOK</h2>
+              </div>
+              <div class="w-full h-0.5 rounded-full bg-gray-300"></div>
+            </div>
+            <div class="bg-white md:col-span-2 mt-5">
+              <img src="madhuassets/facebook.jpg" alt="">
+            </div>
+          </div>
+          <!--POPULAR POSTS-->
+          <div class="p-5 bg-white shadow-lg mt-10">
+            <div class="flex items-center">
+              <div class="w-60">
+                <h2 class="text-sm">POPULAR POSTS</h2>
+              </div>
+              <div class="w-full h-0.5 rounded-full bg-gray-300"></div>
+            </div>
+
+            <div class="bg-white md:col-span-2 mt-5">
+              <div class="md:flex mt-5 lg:mt-5 lg:items-center bg-white">
+                <div class="">
+                  <img class="md:w-40"
+                    src="https://1.bp.blogspot.com/-KgBCnYca9fk/WjQEcie6mZI/AAAAAAAAKG0/a5IDp92Vk0EFQRWvBVv4m1SVkdFVrLm1gCLcBGAs/s1600/29.jpeg"
+                    alt="">
+                </div>
+                <div class="p-5 lg:p-2">
+                  <h1 class="text-lg lg:text-xs font-bold">Beautiful women relaxing at the luxury poolside</h1>
+                </div>
+              </div>
+            </div>
+
+            <hr class="my-5">
+
+            <div class="bg-white md:col-span-2">
+              <div class="md:flex mt-5 lg:mt-5 lg:items-center bg-white">
+                <div class="">
+                  <img class="md:w-40"
+                    src="https://1.bp.blogspot.com/-KgBCnYca9fk/WjQEcie6mZI/AAAAAAAAKG0/a5IDp92Vk0EFQRWvBVv4m1SVkdFVrLm1gCLcBGAs/s1600/29.jpeg"
+                    alt="">
+                </div>
+                <div class="p-5 lg:p-2">
+                  <h1 class="text-lg lg:text-xs font-bold">Beautiful women relaxing at the luxury poolside</h1>
+                </div>
+              </div>
+            </div>
+
+            <hr class="my-5">
+
+            <div class="bg-white md:col-span-2">
+              <div class="md:flex mt-5 lg:mt-5 lg:items-center bg-white">
+                <div class="">
+                  <img class="md:w-40"
+                    src="https://1.bp.blogspot.com/-KgBCnYca9fk/WjQEcie6mZI/AAAAAAAAKG0/a5IDp92Vk0EFQRWvBVv4m1SVkdFVrLm1gCLcBGAs/s1600/29.jpeg"
+                    alt="">
+                </div>
+                <div class="p-5 lg:p-2">
+                  <h1 class="text-lg lg:text-xs font-bold">Beautiful women relaxing at the luxury poolside</h1>
+                </div>
+              </div>
+            </div>
+
+            <hr class="my-5">
+
+            <div class="bg-white md:col-span-2">
+              <div class="md:flex mt-5 lg:mt-5 lg:items-center bg-white">
+                <div class="">
+                  <img class="md:w-40"
+                    src="https://1.bp.blogspot.com/-KgBCnYca9fk/WjQEcie6mZI/AAAAAAAAKG0/a5IDp92Vk0EFQRWvBVv4m1SVkdFVrLm1gCLcBGAs/s1600/29.jpeg"
+                    alt="">
+                </div>
+                <div class="p-5 lg:p-2">
+                  <h1 class="text-lg lg:text-xs font-bold">Beautiful women relaxing at the luxury poolside</h1>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!--CATEGORIES-->
+          <div class="p-5 bg-white shadow-lg mt-10">
+            <div class="flex items-center">
+              <div class="w-60">
+                <h2 class="text-sm">CATEGORIES</h2>
+              </div>
+              <div class="w-full h-0.5 rounded-full bg-gray-300"></div>
+            </div>
+            <div class="mt-5">
+              <ul>
+                <li class="py-2 border-b flex space-x-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-4 h-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>
+                  <p class="text-xs">
+                    Break
+                  </p>
+                </li>
+                <li class="py-2 border-b flex space-x-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-4 h-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>
+                  <p class="text-xs">
+                    Food
+                  </p>
+                </li>
+                <li class="py-2 border-b flex space-x-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-4 h-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>
+                  <p class="text-xs">
+                    Slider
+                  </p>
+                </li>
+                <li class="py-2 border-b flex space-x-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-4 h-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>
+                  <p class="text-xs">
+                    Sport
+                  </p>
+                </li>
+                <li class="py-2 border-b flex space-x-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-4 h-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>
+                  <p class="text-xs">
+                    Technology
+                  </p>
+                </li>
+                <li class="py-2 border-b flex space-x-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-4 h-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>
+                  <p class="text-xs">
+                    Video
+                  </p>
+                </li>
+                <li class="py-2 flex space-x-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-4 h-4">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                  </svg>
+                  <p class="text-xs">
+                    Vimeo
+                  </p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="bg-gray-900 mt-10">
+    <div class="max-w-7xl mx-auto py-10 px-5 md:px-0">
+      <div class="grid lg:grid-cols-3 gap-5 lg:gap-10">
+        <div class="space-y-5">
+          <h1 class="text-sm text-white font-bold">ABOUT</h1>
+          <img class="h-10"
+            src="https://2.bp.blogspot.com/-PyO-ScfF4Lk/WjRD0dDS7tI/AAAAAAAAKIc/KWYu6J8keAIF7i98TtMDvvdnoBUkpiHjQCLcBGAs/s1600/theblogger-logo%2B%25281%2529.png"
+            alt="">
+          <p class="text-gray-100 text-sm">
+            Your source for the lifestyle news. This demo is crafted specifically to exhibit the use of the
+            theme as a
+            lifestyle site. Visit our main page for more demos.
+          </p>
+        </div>
+        <div class="space-y-5">
+          <h1 class="text-sm text-white font-bold">TAGS</h1>
+          <ul class="grid grid-cols-5 gap-2">
+            <li class="text-gray-100 text-sm">
+              <p>Break</p>
+            </li>
+            <li class="text-gray-100 text-sm">
+              <p>Food</p>
+            </li>
+            <li class="text-gray-100 text-sm">
+              <p>Slider</p>
+            </li>
+            <li class="text-gray-100 text-sm">
+              <p>Sport</p>
+            </li>
+            <li class="text-gray-100 text-sm">
+              <p>Technology</p>
+            </li>
+            <li class="text-gray-100 text-sm">
+              <p>Video</p>
+            </li>
+            <li class="text-gray-100 text-sm">
+              <p>Vimeo</p>
+            </li>
+
+          </ul>
+        </div>
+        <div class="space-y-5">
+          <h1 class="text-sm text-white font-bold">POPULAR POSTS</h1>
+          <div class="md:col-span-2">
+            <div class="md:flex mt-5 lg:mt-5">
+              <div class="">
+                <img class="md:w-40"
+                  src="https://1.bp.blogspot.com/-KgBCnYca9fk/WjQEcie6mZI/AAAAAAAAKG0/a5IDp92Vk0EFQRWvBVv4m1SVkdFVrLm1gCLcBGAs/s1600/29.jpeg"
+                  alt="">
+              </div>
+              <div class="p-5 lg:p-2">
+                <h1 class="text-lg lg:text-sm text-white font-bold">Beautiful women relaxing at the
+                  luxury poolside</h1>
+              </div>
+            </div>
+          </div>
+          <div class="md:col-span-2">
+            <div class="md:flex mt-5 lg:mt-5 ">
+              <div class="">
+                <img class="md:w-40"
+                  src="https://1.bp.blogspot.com/-KgBCnYca9fk/WjQEcie6mZI/AAAAAAAAKG0/a5IDp92Vk0EFQRWvBVv4m1SVkdFVrLm1gCLcBGAs/s1600/29.jpeg"
+                  alt="">
+              </div>
+              <div class="p-5 lg:p-2">
+                <h1 class="text-lg lg:text-sm text-white font-bold">Beautiful women relaxing at the
+                  luxury poolside</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="flex items-center justify-between flex-wrap mt-5">
+        <p class="text-xs text-gray-500">Created By <a class="text-white" href="">Shanker Ganesh</a></p>
+        <div class="">
+          <ul class="flex items-center space-x-3">
+            <li class="bg-gray-500 p-1 rounded">
+              <img class="h-4" src="madhuassets/facebook.svg" alt="">
+            </li>
+            <li class="bg-gray-500 p-1 rounded">
+              <img class="h-4" src="madhuassets/twitter.svg" alt="">
+            </li>
+            <li class="bg-gray-500 p-1 rounded">
+              <img class="h-4" src="madhuassets/pinterest.svg" alt="">
+            </li>
+            <li class="bg-gray-500 p-1 rounded">
+              <img class="h-4" src="madhuassets/instagram.svg" alt="">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
